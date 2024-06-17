@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4 DOM Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <form id="personForm">
+      <label class="person-form__name">
+        Name
+        <input id="personName" placeholder="enter your name" />
+      </label>
+      <label class="person-form__age">
+        Age
+        <input type="number" id="personAge" placeholder="enter your age"/>
+      </label>
+      <button type="submit" id="addPersonBtn">
+        Add Person To Local Storage
+      </button>
+    </form>
+    
+    <h1>Local Storage People Record</h1>
+    <div id="records">
+
+    </div>
+    <!-- <table id="people-record" class="people-table">
+      <thead>
+        <tr class="people-table__head-row">
+          <th class="people-table__head-row-header">
+            ID
+          </th>
+          <th class="people-table__head-row-header">
+            Name
+          </th>
+          <th class="people-table__head-row-header">
+            Age
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./util/uuid.js"></script>
+    <script src="./personForm.js"></script>
+  </body>
+</html>
