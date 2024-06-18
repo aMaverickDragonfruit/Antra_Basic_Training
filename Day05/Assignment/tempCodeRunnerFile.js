@@ -1,0 +1,1 @@
+(accumlator, curVal) => accumlator + curVal
